@@ -16,7 +16,7 @@ public class Main {
 		
 		try {
 			ListOfPresidents pressList = new ListOfPresidents(reader.presList(presidentFile));
-			System.out.println(pressList.checkBestYear());
+			System.out.println(pressList.findBestYears(pressList.checkMostPresidents()));
 			
 		} catch (IOException e) {
 			e.printStackTrace();
